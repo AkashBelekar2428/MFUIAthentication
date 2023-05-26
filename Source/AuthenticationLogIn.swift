@@ -251,7 +251,7 @@ public class AuthenticationLogIn: UIView
         btnResendPIN.TABtnTitleTextFont = .boldSystemFont(ofSize: 12)
         
         //MARK: header Logo
-        headerImgLogo.TAImageLogo = UIImage(named: "\("logo2")")!
+        headerImgLogo.TAImageLogo = UIImage(named: "\("logo2")") ?? UIImage()
         
         authConfigObj.headerLbl = lblHeader
         authConfigObj.firstLbl = lblFirst

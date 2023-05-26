@@ -179,7 +179,7 @@ public class Mobile_Number:UIView {
         btnValide.TABtnMasksToBounds =  true
         
         //MARK: Header Img Logo
-        imgLogo.TAImageLogo = UIImage(named: "\("logo2")")!
+        imgLogo.TAImageLogo = UIImage(named: "\("logo2")") ?? UIImage()
         
         config.headerLbl = lblHeader
         config.firstLbl = lblFirst

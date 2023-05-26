@@ -13,12 +13,12 @@ import UIKit
 import ObjectMapper
 import SVProgressHUD
 
-protocol TAMultiAuthFactorSuccess : AnyObject {
+public protocol TAMultiAuthFactorSuccess : AnyObject {
     func TAAuthFactorCompletedWithToken(token: TAAuthGenericResponseTokenObj)
 }
 
 
-class MiddleLayer : TAAuthProtocols {
+public class MiddleLayer : TAAuthProtocols {
     
     var webservice : WsHelperProtocol!
     var authenticateUrl : String = ""
@@ -28,7 +28,7 @@ class MiddleLayer : TAAuthProtocols {
     private var startAuthModel : TAAuthenticateStartRequest?
     private var genericAuthRequest : TAAuthenticateRequest?
     
-    weak var delegate : TAMultiAuthFactorSuccess?
+   public weak var delegate : TAMultiAuthFactorSuccess?
     
     private var tagForComponent : Int {
         get {
@@ -44,7 +44,7 @@ class MiddleLayer : TAAuthProtocols {
         
     }
     
-    func InitialAuthetication(startAuthModel : TAAuthenticateStartRequest) {
+    public func InitialAuthetication(startAuthModel : TAAuthenticateStartRequest) {
         showLoader()
         self.startAuthModel = startAuthModel
         self.webservice.GetSessionIdForAuthetication(api: self.startauthenticateUrl, requestModel: startAuthModel) { resp in
@@ -52,7 +52,7 @@ class MiddleLayer : TAAuthProtocols {
         }
     }
     
-    func StartNextFactorAuthentoicationProcess(RequestModel:TAAuthenticateRequest) {
+    public func StartNextFactorAuthentoicationProcess(RequestModel:TAAuthenticateRequest) {
         showLoader()
         self.genericAuthRequest = RequestModel
         self.webservice.Authenticate(api: self.authenticateUrl, requestModel: RequestModel) { resp in
@@ -237,7 +237,7 @@ class MiddleLayer : TAAuthProtocols {
         }
     }
     
-    func ConfigureUI(type : TAAuthFactorType) -> UIView? {
+   private func ConfigureUI(type : TAAuthFactorType) -> UIView? {
         
         if let taggedView = self.controller?.view.viewWithTag(self.tagForComponent) {
             taggedView.removeFromSuperview()
@@ -326,7 +326,7 @@ class MiddleLayer : TAAuthProtocols {
 }
 
 extension MiddleLayer : AuthenticationLogInDelegate {
-    func sendPinBtnAction(email: String, password: String) {
+    public func sendPinBtnAction(email: String, password: String) {
         print("EMAIL ==> \(email)")
         print("PASSWORD ==> \(password)")
         
@@ -350,7 +350,7 @@ extension MiddleLayer : AuthenticationLogInDelegate {
 
 
 extension MiddleLayer : MobileNumberDelegate {
-    func sendPINAction(mobileNumber: String) {
+    public func sendPINAction(mobileNumber: String) {
         print("PHONE NUMBER ==> \(mobileNumber)")
         
         let dataObj = TAAuthRespObj?.data
@@ -368,7 +368,7 @@ extension MiddleLayer : MobileNumberDelegate {
 
 
 extension MiddleLayer : EmailAddressDelegate {
-    func sendPINBtnAction(email: String) {
+    public func sendPINBtnAction(email: String) {
         
         print("EMAIL ID ==> \(email)")
         let dataObj = TAAuthRespObj?.data
@@ -385,7 +385,7 @@ extension MiddleLayer : EmailAddressDelegate {
 }
 
 extension MiddleLayer : PINViewDelegate {
-    func validateBtnAction(pinNumber: String) {
+    public func validateBtnAction(pinNumber: String) {
         print("PING VIEW ==> \(pinNumber)")
         let dataObj = TAAuthRespObj?.data
         let requestObj = TAAuthenticateRequest.init()

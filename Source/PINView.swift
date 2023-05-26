@@ -401,7 +401,7 @@ public class PINView: UIView{
         btnResend.TABtnBackgrounColor = .btnTitleColor
         
         //MARK: Header Img Logo
-        imgLogo.TAImageLogo = UIImage(named: "\("logo2")")!
+        imgLogo.TAImageLogo = UIImage(named: "\("logo2")") ?? UIImage()
     
         
         config.headerLbl = lblHeader

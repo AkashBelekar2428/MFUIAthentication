@@ -27,7 +27,7 @@ import ObjectMapper
 
 public class TAAuthenticateRequest : Mappable
 {
-    var model : TAAuthenticateRequestModelObj!
+    public var model : TAAuthenticateRequestModelObj!
     public init() {}
     required public init?(map: Map) {}
     public func mapping(map: Map)

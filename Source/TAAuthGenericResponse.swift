@@ -75,8 +75,8 @@ public class TAAuthGenericResponse : Mappable
 // MARK: Data Response Model
 public class TAAuthGenericResponseDataObj : Mappable
 {
-    public  var sessionId : String = ""
-    public  var nextStep : Int = -1
+    public var sessionId : String = ""
+    public var nextStep : Int = -1
     public var token : TAAuthGenericResponseTokenObj!
     public var nextAuthFactor : Int = -1
     public var pendingRetryCount : Int = -1
@@ -103,7 +103,7 @@ public class TAAuthGenericResponseDataObj : Mappable
 // MARK: Validation Errors Model
 public class TAAuthGenericResponseTokenObj : Mappable
 {
-    public  var token : String = ""
+    public var token : String = ""
     public var tokenExpiry : String = ""
    
     public init() {}

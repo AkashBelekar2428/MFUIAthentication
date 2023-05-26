@@ -184,7 +184,7 @@ public class Email_Address: UIView{
         btnValide.TABtnMasksToBounds =  true
         
         //MARK: Header Img Logo
-        imgLogo.TAImageLogo = UIImage(named: "\("logo2")")!
+        imgLogo.TAImageLogo = UIImage(named: "\("logo2")") ?? UIImage()
         
         //MARK: Assign Values
         config.headerLbl = lblHeader

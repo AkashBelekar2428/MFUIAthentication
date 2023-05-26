@@ -147,7 +147,7 @@ public class WSHelper: NSObject {
     
     //MARK: TAAuthetication remote call's
 
-    public  func GetSessionIdForAuthetication(api:String, requestModel:TAAuthenticateStartRequest, completion: @escaping (responseObject) -> ())
+    public func GetSessionIdForAuthetication(api:String, requestModel:TAAuthenticateStartRequest, completion: @escaping (responseObject) -> ())
     {
         let dict = requestModel.toJSON()
         WebServiceCall(api: api, httpType: .post, dict: dict) { (obj) in
@@ -167,7 +167,7 @@ public class WSHelper: NSObject {
         }
     }
     
-    public  func Authenticate(api:String, requestModel:TAAuthenticateRequest, completion: @escaping (responseObject) -> ())
+    public func Authenticate(api:String, requestModel:TAAuthenticateRequest, completion: @escaping (responseObject) -> ())
     {
         let dict = requestModel.toJSON()
         WebServiceCall(api: api, httpType: .post, dict: dict) { (obj) in
@@ -200,12 +200,12 @@ public struct GeneralRespModel
 
 
 
-class RequestManager {
-    static let shared = RequestManager()
+public class RequestManager {
+    public static let shared = RequestManager()
     fileprivate let liveManager: Session
     fileprivate let mockManager: Session
     
-    init() {
+    public init() {
         
         let configuration: URLSessionConfiguration = {
             let configuration = URLSessionConfiguration.default
@@ -222,7 +222,7 @@ public enum RequestState {
     case live
     case mock
     
-    var session: Session {
+    public  var session: Session {
         switch self {
         case .live: return RequestManager.shared.liveManager
         case .mock: return RequestManager.shared.mockManager
