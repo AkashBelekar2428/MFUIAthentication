@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'MFUIAthentication'
-  s.version          = '1.1.1'
+  s.version          = '1.1.2'
   s.summary          = 'easy to use of MFUIAthentication.'
 
 # This description is used to generate tags and improve search results.
@@ -30,7 +30,7 @@ Pod::Spec.new do |s|
   
   s.ios.deployment_target = '12.0'
   s.swift_version = '5.0'
-  s.source_files = 'Source/**/*'
+  s.source_files = 'Source/**/*.{swift,json,xib,xcassets}'
   s.dependency 'Alamofire', '~> 5.4'
   s.dependency 'SVProgressHUD'
   s.dependency 'ObjectMapper', '~> 4.2'
