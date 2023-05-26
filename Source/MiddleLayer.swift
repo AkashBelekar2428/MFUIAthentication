@@ -248,8 +248,7 @@ class MiddleLayer : TAAuthProtocols {
             var view : UIView {
                 get {
                     let UsernamePasswordUI = AuthenticationLogIn()
-                    UsernamePasswordUI.frame.size = frame!.size
-                    UsernamePasswordUI.frame.origin = (self.controller?.view.center)!
+                    UsernamePasswordUI.frame = frame!
                     UsernamePasswordUI.tag = self.tagForComponent
                     UsernamePasswordUI.delegate = self
                     UsernamePasswordUI.setDefaultThems()
@@ -297,8 +296,7 @@ class MiddleLayer : TAAuthProtocols {
             var view : UIView {
                 get {
                     let MobileUI = Mobile_Number()
-                    MobileUI.frame.size = frame!.size
-                    MobileUI.frame.origin = (self.controller?.view.center)!
+                    MobileUI.frame = frame!
                     MobileUI.tag = self.tagForComponent
                     MobileUI.setMobileDefaultThemes()
                     MobileUI.delegate = self
