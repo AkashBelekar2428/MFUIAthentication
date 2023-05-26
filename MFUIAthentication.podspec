@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'MFUIAthentication'
   s.version          = '1.1.1'
-  s.summary          = 'A short description of MFUIAthentication.'
+  s.summary          = 'easy to use of MFUIAthentication.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+'nice pod .. its easy to use.. nice '
                        DESC
 
   s.homepage         = 'https://github.com/akashbelekar2428/MFUIAthentication'
