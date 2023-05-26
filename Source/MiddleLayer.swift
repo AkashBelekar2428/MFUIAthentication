@@ -36,7 +36,7 @@ class MiddleLayer : TAAuthProtocols {
         }
     }
     
-    required init(webservice: WsHelperProtocol, authenticateUrl : String, startauthenticateUrl : String, controller : UIViewController) {
+    required public init(webservice: WsHelperProtocol, authenticateUrl : String, startauthenticateUrl : String, controller : UIViewController) {
         self.webservice = webservice
         self.authenticateUrl = authenticateUrl
         self.startauthenticateUrl = startauthenticateUrl
