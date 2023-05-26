@@ -1,0 +1,776 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		07CA0475EFBDA6B3290C52FCA33B9C82 /* MFUIAthentication-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 183DB82BEEFA169AF29970A3FA24AE34 /* MFUIAthentication-dummy.m */; };
+		28B6BE892A0FBAC535000A3833B71CC9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		2CAC81DA67B8C17285BCA6DDBE7199B0 /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F07912577CDB819C7A5E7F5CA15B80A /* ReplaceMe.swift */; };
+		3A0C35F819942CD1FAB7B9B86A8F5C1F /* Pods-MFUIAthentication_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E76BC7B53C4B135D5CBFD91510EFE2A9 /* Pods-MFUIAthentication_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6B0B9726746E34F4084FBA8EE896C211 /* Pods-MFUIAthentication_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 69F482A81ECD3C06E1EFC84037526CE7 /* Pods-MFUIAthentication_Example-dummy.m */; };
+		75DA9CA1F8220AC06AA0265CAE9D5958 /* Pods-MFUIAthentication_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E1623A7E245591C60647A2458C5BD2D7 /* Pods-MFUIAthentication_Tests-dummy.m */; };
+		7CB0C869BF95B996E7FC02D4C4896242 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		9A6FC103EC57257379F848EA971FC61F /* Pods-MFUIAthentication_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CA2725DD64C123E991FA5E54F631A90E /* Pods-MFUIAthentication_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A3B8251A31B49134CF950FD30D123511 /* MFUIAthentication-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B2A799B55FA9AA68A7672BC3625BABF /* MFUIAthentication-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CBFA431D663C698CA6B323673889C885 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0A3505334E9EF52A697EB47C7D4A2FDA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2466CCECB02B48E36CF1E38D403744E2;
+			remoteInfo = "Pods-MFUIAthentication_Example";
+		};
+		4A16F5D7CF347D39F80F175486FA7726 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2223FA112CE96A481313EC7F0FFE515B;
+			remoteInfo = MFUIAthentication;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0C4B5FCE972FA8218D6000444B99B6C5 /* Pods-MFUIAthentication_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MFUIAthentication_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		0CF0FF826078FABA25774EDF33FFF9C5 /* Pods-MFUIAthentication_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MFUIAthentication_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		0F0ED4467AA20B73C1AE4E8291EC5A59 /* MFUIAthentication-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "MFUIAthentication-Info.plist"; sourceTree = "<group>"; };
+		130203D306683D27CD3F2274DF9E95DE /* Pods-MFUIAthentication_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MFUIAthentication_Tests-Info.plist"; sourceTree = "<group>"; };
+		1755B6CFBCF46FB5D092244D37C26406 /* Pods-MFUIAthentication_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MFUIAthentication_Example-frameworks.sh"; sourceTree = "<group>"; };
+		183DB82BEEFA169AF29970A3FA24AE34 /* MFUIAthentication-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MFUIAthentication-dummy.m"; sourceTree = "<group>"; };
+		1B2A799B55FA9AA68A7672BC3625BABF /* MFUIAthentication-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MFUIAthentication-umbrella.h"; sourceTree = "<group>"; };
+		3F07912577CDB819C7A5E7F5CA15B80A /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReplaceMe.swift; path = MFUIAthentication/Classes/ReplaceMe.swift; sourceTree = "<group>"; };
+		4D7079338F3577F6E78138C87373B9F1 /* Pods-MFUIAthentication_Example */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-MFUIAthentication_Example"; path = Pods_MFUIAthentication_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4DECC399BC7A1B44688FC39569C608F0 /* Pods-MFUIAthentication_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-MFUIAthentication_Example.modulemap"; sourceTree = "<group>"; };
+		5309A8B3C307A5D7D01B785C988E80DC /* MFUIAthentication.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MFUIAthentication.release.xcconfig; sourceTree = "<group>"; };
+		69DBD630D9943294B3C69649AA6B7786 /* Pods-MFUIAthentication_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MFUIAthentication_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		69F482A81ECD3C06E1EFC84037526CE7 /* Pods-MFUIAthentication_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MFUIAthentication_Example-dummy.m"; sourceTree = "<group>"; };
+		6E1343260172CFCEB5034DDA0398101C /* MFUIAthentication.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = MFUIAthentication.modulemap; sourceTree = "<group>"; };
+		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		7CDDE80B28678B02D51B2FCE1923DDB6 /* Pods-MFUIAthentication_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MFUIAthentication_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		7D625ED76B465033DE025080D56E66AF /* Pods-MFUIAthentication_Tests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-MFUIAthentication_Tests"; path = Pods_MFUIAthentication_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E61FCFCF1C4E4B752D77B3A2A534D53 /* MFUIAthentication.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MFUIAthentication.debug.xcconfig; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		B50F68EF9D997117294B14F1DB48CE06 /* Pods-MFUIAthentication_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MFUIAthentication_Example.release.xcconfig"; sourceTree = "<group>"; };
+		BA5D1E5F732688A35548AD80B58EAC84 /* MFUIAthentication-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MFUIAthentication-prefix.pch"; sourceTree = "<group>"; };
+		BB39C6A8964A7B16C6BA0365573CDDD4 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		BF1898F50A9B28A4951EEBD9472572D2 /* Pods-MFUIAthentication_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MFUIAthentication_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		BFD10D4E3951081FB9A36932FF8292CE /* Pods-MFUIAthentication_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MFUIAthentication_Example-Info.plist"; sourceTree = "<group>"; };
+		C2BD5F58526C839B22315E657D9860BD /* Pods-MFUIAthentication_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-MFUIAthentication_Tests.modulemap"; sourceTree = "<group>"; };
+		CA2725DD64C123E991FA5E54F631A90E /* Pods-MFUIAthentication_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MFUIAthentication_Example-umbrella.h"; sourceTree = "<group>"; };
+		CCAE53D5DD222D0858DB7ADC9B073DAE /* MFUIAthentication */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MFUIAthentication; path = MFUIAthentication.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D1C93F8DA689E0E130207FFE819B96A8 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		E1623A7E245591C60647A2458C5BD2D7 /* Pods-MFUIAthentication_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MFUIAthentication_Tests-dummy.m"; sourceTree = "<group>"; };
+		E76BC7B53C4B135D5CBFD91510EFE2A9 /* Pods-MFUIAthentication_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MFUIAthentication_Tests-umbrella.h"; sourceTree = "<group>"; };
+		EDC0578686F7A5954F26FEE82CDF7F43 /* Pods-MFUIAthentication_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MFUIAthentication_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		F5EBB8CE753609A7F1CAA0FA13913ED3 /* Pods-MFUIAthentication_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MFUIAthentication_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		FD5DDD93B5F7E5900BF98946CF641A8B /* MFUIAthentication.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = MFUIAthentication.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		316E026146335BBDC74AAFDC9CB9DD26 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBFA431D663C698CA6B323673889C885 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F001C7C87834D10BA906F8B1EA5C2DE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28B6BE892A0FBAC535000A3833B71CC9 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E2DABEEC0903468670317DB3A8E603D8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7CB0C869BF95B996E7FC02D4C4896242 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0EA78868B4D3CCC2ACCEBA1FF6A48255 /* Pods-MFUIAthentication_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				C2BD5F58526C839B22315E657D9860BD /* Pods-MFUIAthentication_Tests.modulemap */,
+				F5EBB8CE753609A7F1CAA0FA13913ED3 /* Pods-MFUIAthentication_Tests-acknowledgements.markdown */,
+				0C4B5FCE972FA8218D6000444B99B6C5 /* Pods-MFUIAthentication_Tests-acknowledgements.plist */,
+				E1623A7E245591C60647A2458C5BD2D7 /* Pods-MFUIAthentication_Tests-dummy.m */,
+				130203D306683D27CD3F2274DF9E95DE /* Pods-MFUIAthentication_Tests-Info.plist */,
+				E76BC7B53C4B135D5CBFD91510EFE2A9 /* Pods-MFUIAthentication_Tests-umbrella.h */,
+				BF1898F50A9B28A4951EEBD9472572D2 /* Pods-MFUIAthentication_Tests.debug.xcconfig */,
+				7CDDE80B28678B02D51B2FCE1923DDB6 /* Pods-MFUIAthentication_Tests.release.xcconfig */,
+			);
+			name = "Pods-MFUIAthentication_Tests";
+			path = "Target Support Files/Pods-MFUIAthentication_Tests";
+			sourceTree = "<group>";
+		};
+		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		7A1A79A1B50701F49DD97D202BBD0F1B /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				6E1343260172CFCEB5034DDA0398101C /* MFUIAthentication.modulemap */,
+				183DB82BEEFA169AF29970A3FA24AE34 /* MFUIAthentication-dummy.m */,
+				0F0ED4467AA20B73C1AE4E8291EC5A59 /* MFUIAthentication-Info.plist */,
+				BA5D1E5F732688A35548AD80B58EAC84 /* MFUIAthentication-prefix.pch */,
+				1B2A799B55FA9AA68A7672BC3625BABF /* MFUIAthentication-umbrella.h */,
+				8E61FCFCF1C4E4B752D77B3A2A534D53 /* MFUIAthentication.debug.xcconfig */,
+				5309A8B3C307A5D7D01B785C988E80DC /* MFUIAthentication.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/MFUIAthentication";
+			sourceTree = "<group>";
+		};
+		7BF5EEDAC22986552A5B131FE0D19519 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B1C8C0CE05D7B23C896AAEE25C8C18B2 /* MFUIAthentication */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		995F1D3CA452ED6E14774E7F0CC5ECDA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CCAE53D5DD222D0858DB7ADC9B073DAE /* MFUIAthentication */,
+				4D7079338F3577F6E78138C87373B9F1 /* Pods-MFUIAthentication_Example */,
+				7D625ED76B465033DE025080D56E66AF /* Pods-MFUIAthentication_Tests */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AEDE049DF8A16BFA3662B5CB25ECE392 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B2E5488568704EB28FC64ED9220D41C2 /* Pods-MFUIAthentication_Example */,
+				0EA78868B4D3CCC2ACCEBA1FF6A48255 /* Pods-MFUIAthentication_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		B1C8C0CE05D7B23C896AAEE25C8C18B2 /* MFUIAthentication */ = {
+			isa = PBXGroup;
+			children = (
+				3F07912577CDB819C7A5E7F5CA15B80A /* ReplaceMe.swift */,
+				D56762772D65EB3C55C1525700D0B822 /* Pod */,
+				7A1A79A1B50701F49DD97D202BBD0F1B /* Support Files */,
+			);
+			name = MFUIAthentication;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		B2E5488568704EB28FC64ED9220D41C2 /* Pods-MFUIAthentication_Example */ = {
+			isa = PBXGroup;
+			children = (
+				4DECC399BC7A1B44688FC39569C608F0 /* Pods-MFUIAthentication_Example.modulemap */,
+				EDC0578686F7A5954F26FEE82CDF7F43 /* Pods-MFUIAthentication_Example-acknowledgements.markdown */,
+				0CF0FF826078FABA25774EDF33FFF9C5 /* Pods-MFUIAthentication_Example-acknowledgements.plist */,
+				69F482A81ECD3C06E1EFC84037526CE7 /* Pods-MFUIAthentication_Example-dummy.m */,
+				1755B6CFBCF46FB5D092244D37C26406 /* Pods-MFUIAthentication_Example-frameworks.sh */,
+				BFD10D4E3951081FB9A36932FF8292CE /* Pods-MFUIAthentication_Example-Info.plist */,
+				CA2725DD64C123E991FA5E54F631A90E /* Pods-MFUIAthentication_Example-umbrella.h */,
+				69DBD630D9943294B3C69649AA6B7786 /* Pods-MFUIAthentication_Example.debug.xcconfig */,
+				B50F68EF9D997117294B14F1DB48CE06 /* Pods-MFUIAthentication_Example.release.xcconfig */,
+			);
+			name = "Pods-MFUIAthentication_Example";
+			path = "Target Support Files/Pods-MFUIAthentication_Example";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				7BF5EEDAC22986552A5B131FE0D19519 /* Development Pods */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				995F1D3CA452ED6E14774E7F0CC5ECDA /* Products */,
+				AEDE049DF8A16BFA3662B5CB25ECE392 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				578452D2E740E91742655AC8F1636D1F /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D56762772D65EB3C55C1525700D0B822 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				BB39C6A8964A7B16C6BA0365573CDDD4 /* LICENSE */,
+				FD5DDD93B5F7E5900BF98946CF641A8B /* MFUIAthentication.podspec */,
+				D1C93F8DA689E0E130207FFE819B96A8 /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		05655EF03B6C8A7823A47EB61840A081 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A3B8251A31B49134CF950FD30D123511 /* MFUIAthentication-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		145D70D9DCC2DB769D0C7D1DA9EAA4AE /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A0C35F819942CD1FAB7B9B86A8F5C1F /* Pods-MFUIAthentication_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6D14D5775A87E5ACDD64CF73A54743A9 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A6FC103EC57257379F848EA971FC61F /* Pods-MFUIAthentication_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		2223FA112CE96A481313EC7F0FFE515B /* MFUIAthentication */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F863BB1F2E272CD8DCCD714C05EF23E1 /* Build configuration list for PBXNativeTarget "MFUIAthentication" */;
+			buildPhases = (
+				05655EF03B6C8A7823A47EB61840A081 /* Headers */,
+				092827E19B8114370AD2771299BB53CF /* Sources */,
+				E2DABEEC0903468670317DB3A8E603D8 /* Frameworks */,
+				05B8C31F9C1E517B8E1D8E188181DA07 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MFUIAthentication;
+			productName = MFUIAthentication;
+			productReference = CCAE53D5DD222D0858DB7ADC9B073DAE /* MFUIAthentication */;
+			productType = "com.apple.product-type.framework";
+		};
+		2466CCECB02B48E36CF1E38D403744E2 /* Pods-MFUIAthentication_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D99AC81ECA21B99FB83CAF1CBEE56A67 /* Build configuration list for PBXNativeTarget "Pods-MFUIAthentication_Example" */;
+			buildPhases = (
+				6D14D5775A87E5ACDD64CF73A54743A9 /* Headers */,
+				45A1C173B2794F66D1D8D025790FD7EB /* Sources */,
+				5F001C7C87834D10BA906F8B1EA5C2DE /* Frameworks */,
+				DFC76F0AB722D8B06903C32168ED86FB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3002FC0FC1A45EA1C99079292E63144C /* PBXTargetDependency */,
+			);
+			name = "Pods-MFUIAthentication_Example";
+			productName = Pods_MFUIAthentication_Example;
+			productReference = 4D7079338F3577F6E78138C87373B9F1 /* Pods-MFUIAthentication_Example */;
+			productType = "com.apple.product-type.framework";
+		};
+		7A08DCF37AAA84BF889813F72A13E107 /* Pods-MFUIAthentication_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 40C34BD258F750BD279A9B85EDCC2069 /* Build configuration list for PBXNativeTarget "Pods-MFUIAthentication_Tests" */;
+			buildPhases = (
+				145D70D9DCC2DB769D0C7D1DA9EAA4AE /* Headers */,
+				FF138A4DFD9656D265F6B023F01FDB82 /* Sources */,
+				316E026146335BBDC74AAFDC9CB9DD26 /* Frameworks */,
+				130EF267180589122CBC064F3D0E1B22 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DA6FDC26850B7AD3C294D551AAB8495B /* PBXTargetDependency */,
+			);
+			name = "Pods-MFUIAthentication_Tests";
+			productName = Pods_MFUIAthentication_Tests;
+			productReference = 7D625ED76B465033DE025080D56E66AF /* Pods-MFUIAthentication_Tests */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 995F1D3CA452ED6E14774E7F0CC5ECDA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2223FA112CE96A481313EC7F0FFE515B /* MFUIAthentication */,
+				2466CCECB02B48E36CF1E38D403744E2 /* Pods-MFUIAthentication_Example */,
+				7A08DCF37AAA84BF889813F72A13E107 /* Pods-MFUIAthentication_Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		05B8C31F9C1E517B8E1D8E188181DA07 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		130EF267180589122CBC064F3D0E1B22 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DFC76F0AB722D8B06903C32168ED86FB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		092827E19B8114370AD2771299BB53CF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07CA0475EFBDA6B3290C52FCA33B9C82 /* MFUIAthentication-dummy.m in Sources */,
+				2CAC81DA67B8C17285BCA6DDBE7199B0 /* ReplaceMe.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		45A1C173B2794F66D1D8D025790FD7EB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6B0B9726746E34F4084FBA8EE896C211 /* Pods-MFUIAthentication_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF138A4DFD9656D265F6B023F01FDB82 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75DA9CA1F8220AC06AA0265CAE9D5958 /* Pods-MFUIAthentication_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3002FC0FC1A45EA1C99079292E63144C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MFUIAthentication;
+			target = 2223FA112CE96A481313EC7F0FFE515B /* MFUIAthentication */;
+			targetProxy = 4A16F5D7CF347D39F80F175486FA7726 /* PBXContainerItemProxy */;
+		};
+		DA6FDC26850B7AD3C294D551AAB8495B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-MFUIAthentication_Example";
+			target = 2466CCECB02B48E36CF1E38D403744E2 /* Pods-MFUIAthentication_Example */;
+			targetProxy = 0A3505334E9EF52A697EB47C7D4A2FDA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0F22E2C2A854F7492112B37153D36E9E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BF1898F50A9B28A4951EEBD9472572D2 /* Pods-MFUIAthentication_Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-MFUIAthentication_Tests/Pods-MFUIAthentication_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MFUIAthentication_Tests/Pods-MFUIAthentication_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		192D9F3124D48250C2E47CCE06C32A60 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 69DBD630D9943294B3C69649AA6B7786 /* Pods-MFUIAthentication_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-MFUIAthentication_Example/Pods-MFUIAthentication_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MFUIAthentication_Example/Pods-MFUIAthentication_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		1A444C22592A47FC03D7AFA4DF724072 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B50F68EF9D997117294B14F1DB48CE06 /* Pods-MFUIAthentication_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-MFUIAthentication_Example/Pods-MFUIAthentication_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MFUIAthentication_Example/Pods-MFUIAthentication_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		7EE7A78859F657F6BEFC651185B43192 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		8C292EF744A4156D3A6D00EB3FB2195C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5309A8B3C307A5D7D01B785C988E80DC /* MFUIAthentication.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/MFUIAthentication/MFUIAthentication-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MFUIAthentication/MFUIAthentication-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/MFUIAthentication/MFUIAthentication.modulemap";
+				PRODUCT_MODULE_NAME = MFUIAthentication;
+				PRODUCT_NAME = MFUIAthentication;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A600EF90D7130B340B89957FF65B19ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7CDDE80B28678B02D51B2FCE1923DDB6 /* Pods-MFUIAthentication_Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-MFUIAthentication_Tests/Pods-MFUIAthentication_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MFUIAthentication_Tests/Pods-MFUIAthentication_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D299434AB35E7FD6F7921C8EF24742FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		EADA93924002E3F3B0330E159AB5D29C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8E61FCFCF1C4E4B752D77B3A2A534D53 /* MFUIAthentication.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/MFUIAthentication/MFUIAthentication-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MFUIAthentication/MFUIAthentication-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/MFUIAthentication/MFUIAthentication.modulemap";
+				PRODUCT_MODULE_NAME = MFUIAthentication;
+				PRODUCT_NAME = MFUIAthentication;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		40C34BD258F750BD279A9B85EDCC2069 /* Build configuration list for PBXNativeTarget "Pods-MFUIAthentication_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0F22E2C2A854F7492112B37153D36E9E /* Debug */,
+				A600EF90D7130B340B89957FF65B19ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D299434AB35E7FD6F7921C8EF24742FF /* Debug */,
+				7EE7A78859F657F6BEFC651185B43192 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D99AC81ECA21B99FB83CAF1CBEE56A67 /* Build configuration list for PBXNativeTarget "Pods-MFUIAthentication_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				192D9F3124D48250C2E47CCE06C32A60 /* Debug */,
+				1A444C22592A47FC03D7AFA4DF724072 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F863BB1F2E272CD8DCCD714C05EF23E1 /* Build configuration list for PBXNativeTarget "MFUIAthentication" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EADA93924002E3F3B0330E159AB5D29C /* Debug */,
+				8C292EF744A4156D3A6D00EB3FB2195C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

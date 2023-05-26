@@ -1,0 +1,16 @@
+PODS:
+  - MFUIAthentication (0.1.0)
+
+DEPENDENCIES:
+  - MFUIAthentication (from `../`)
+
+EXTERNAL SOURCES:
+  MFUIAthentication:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  MFUIAthentication: 72474ddec950a75433d6a4ae4b5eec2d80ca5337
+
+PODFILE CHECKSUM: f76359905cae3db332c823b3d6eed7c978907767
+
+COCOAPODS: 1.12.1
