@@ -1,5 +1,5 @@
 import XCTest
-import MFUIAthentication
+//import MFUIAthentication
 
 class Tests: XCTestCase {
     

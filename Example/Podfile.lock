@@ -1,16 +1,31 @@
 PODS:
+  - Alamofire (5.7.1)
   - MFUIAthentication (0.1.0)
+  - ObjectMapper (4.2.0)
+  - SVProgressHUD (2.2.5)
 
 DEPENDENCIES:
+  - Alamofire (~> 5.4)
   - MFUIAthentication (from `../`)
+  - ObjectMapper (~> 4.2)
+  - SVProgressHUD
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - ObjectMapper
+    - SVProgressHUD
 
 EXTERNAL SOURCES:
   MFUIAthentication:
     :path: "../"
 
 SPEC CHECKSUMS:
+  Alamofire: 0123a34370cb170936ae79a8df46cc62b2edeb88
   MFUIAthentication: 72474ddec950a75433d6a4ae4b5eec2d80ca5337
+  ObjectMapper: 1eb41f610210777375fa806bf161dc39fb832b81
+  SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
 
-PODFILE CHECKSUM: f76359905cae3db332c823b3d6eed7c978907767
+PODFILE CHECKSUM: 3e2129e61203cb896fbb9f92a2d486b412310f60
 
 COCOAPODS: 1.12.1
