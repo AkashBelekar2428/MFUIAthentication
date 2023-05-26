@@ -26,7 +26,7 @@ import ObjectMapper
 //    MOBILE_PIN = 3,
 //    EMAIL_PIN = 4
 
-enum TAAuthFactorType {
+public enum TAAuthFactorType {
     case USERNAME_PASSWORD
     case EMAIL_PASSWORD
     case MOBILE_PIN
@@ -35,7 +35,7 @@ enum TAAuthFactorType {
     case NONE
 }
 
-enum TAAuthFactorNextStep {
+public enum TAAuthFactorNextStep {
     case VERIFY_USERNAME_PASSWORD
     case VERIFY_EMAIL_PASSWORD
     case VERIFY_PASSWORD
@@ -49,18 +49,18 @@ enum TAAuthFactorNextStep {
 
 
 // MARK: Generic Response Model
-class TAAuthGenericResponse : Mappable
+public class TAAuthGenericResponse : Mappable
 {
-    var data : TAAuthGenericResponseDataObj!
-    var isError : Bool = false
-    var errorMessage : String = ""
-    var errorCode : String = ""
-    var errors : [String] = []
-    var validationErrors : [TAAuthGenericResponseValidationErrorsObj]!
+    public var data : TAAuthGenericResponseDataObj!
+    public var isError : Bool = false
+    public var errorMessage : String = ""
+    public var errorCode : String = ""
+    public var errors : [String] = []
+    public var validationErrors : [TAAuthGenericResponseValidationErrorsObj]!
     
-    init() {}
-    required init?(map: Map) {}
-    func mapping(map: Map)
+    public init() {}
+    required public init?(map: Map) {}
+    public func mapping(map: Map)
     {
         data                    <- map["data"]
         isError                 <- map["isError"]
@@ -73,22 +73,22 @@ class TAAuthGenericResponse : Mappable
 }
 
 // MARK: Data Response Model
-class TAAuthGenericResponseDataObj : Mappable
+public class TAAuthGenericResponseDataObj : Mappable
 {
-    var sessionId : String = ""
-    var nextStep : Int = -1
-    var token : TAAuthGenericResponseTokenObj!
-    var nextAuthFactor : Int = -1
-    var pendingRetryCount : Int = -1
-    var resendPinAfter : Int = -1
-    var nextStepEnum : TAAuthFactorNextStep = .NONE
-    var authType : TAAuthFactorType = .NONE
-    var componentType : TAAuthFactorType = .NONE
+    public  var sessionId : String = ""
+    public  var nextStep : Int = -1
+    public var token : TAAuthGenericResponseTokenObj!
+    public var nextAuthFactor : Int = -1
+    public var pendingRetryCount : Int = -1
+    public var resendPinAfter : Int = -1
+    public var nextStepEnum : TAAuthFactorNextStep = .NONE
+    public var authType : TAAuthFactorType = .NONE
+    public var componentType : TAAuthFactorType = .NONE
 
    
-    init() {}
-    required init?(map: Map) {}
-    func mapping(map: Map)
+    public init() {}
+    required public init?(map: Map) {}
+    public func mapping(map: Map)
     {
         sessionId                       <- map["sessionId"]
         nextStep                        <- map["nextStep"]
@@ -101,14 +101,14 @@ class TAAuthGenericResponseDataObj : Mappable
 }
 
 // MARK: Validation Errors Model
-class TAAuthGenericResponseTokenObj : Mappable
+public class TAAuthGenericResponseTokenObj : Mappable
 {
-    var token : String = ""
-    var tokenExpiry : String = ""
+    public  var token : String = ""
+    public var tokenExpiry : String = ""
    
-    init() {}
-    required init?(map: Map) {}
-    func mapping(map: Map)
+    public init() {}
+    required public init?(map: Map) {}
+    public func mapping(map: Map)
     {
         token                       <- map["token"]
         tokenExpiry                 <- map["tokenExpiry"]
@@ -116,14 +116,14 @@ class TAAuthGenericResponseTokenObj : Mappable
     
 }
 // MARK: Validation Errors Model
-class TAAuthGenericResponseValidationErrorsObj : Mappable
+public class TAAuthGenericResponseValidationErrorsObj : Mappable
 {
-    var propertyName : String = ""
-    var errorMessage : String = ""
+    public var propertyName : String = ""
+    public var errorMessage : String = ""
    
-    init() {}
-    required init?(map: Map) {}
-    func mapping(map: Map)
+    public init() {}
+    required public init?(map: Map) {}
+    public func mapping(map: Map)
     {
         propertyName                 <- map["propertyName"]
         errorMessage                 <- map["errorMessage"]

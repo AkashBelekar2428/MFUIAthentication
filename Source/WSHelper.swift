@@ -11,14 +11,14 @@ import Foundation
 import ObjectMapper
 import Alamofire
 
-enum responseObject
+public enum responseObject
 {
     case success(Any)
     case failure(errorType,String)
     case sessionTimeOut(Any)
 }
 
-enum errorType
+public enum errorType
 {
     case NoInternet
     case ServerError
@@ -31,9 +31,9 @@ enum errorType
 let somethngWentWrng_Msg = "Something went wrong, please try later."
 let No_Internet_Connection_Msg = "No Internet Connection.\nPlease check internet connection and try again!!"
 
-class WSHelper: NSObject {
+public class WSHelper: NSObject {
     
-    static let sharedInstance = WSHelper()
+    public static let sharedInstance = WSHelper()
     var isLive:Bool! = true
   
     //MARK: Init class
@@ -147,7 +147,7 @@ class WSHelper: NSObject {
     
     //MARK: TAAuthetication remote call's
 
-    func GetSessionIdForAuthetication(api:String, requestModel:TAAuthenticateStartRequest, completion: @escaping (responseObject) -> ())
+    public  func GetSessionIdForAuthetication(api:String, requestModel:TAAuthenticateStartRequest, completion: @escaping (responseObject) -> ())
     {
         let dict = requestModel.toJSON()
         WebServiceCall(api: api, httpType: .post, dict: dict) { (obj) in
@@ -167,7 +167,7 @@ class WSHelper: NSObject {
         }
     }
     
-    func Authenticate(api:String, requestModel:TAAuthenticateRequest, completion: @escaping (responseObject) -> ())
+    public  func Authenticate(api:String, requestModel:TAAuthenticateRequest, completion: @escaping (responseObject) -> ())
     {
         let dict = requestModel.toJSON()
         WebServiceCall(api: api, httpType: .post, dict: dict) { (obj) in
@@ -218,7 +218,7 @@ class RequestManager {
     }
 }
 
-enum RequestState {
+public enum RequestState {
     case live
     case mock
     

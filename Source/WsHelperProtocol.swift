@@ -8,7 +8,7 @@
 import Foundation
 
 
-protocol WsHelperProtocol
+public protocol WsHelperProtocol
 {
     func GetSessionIdForAuthetication(api: String, requestModel : TAAuthenticateStartRequest , completionHandler: @escaping (GeneralRespModel?) -> Void )
     func Authenticate(api: String, requestModel : TAAuthenticateRequest , completionHandler: @escaping (GeneralRespModel?) -> Void )

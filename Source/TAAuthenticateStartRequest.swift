@@ -25,33 +25,33 @@ import ObjectMapper
 
 
 
-class TAAuthenticateRequest : Mappable
+public class TAAuthenticateRequest : Mappable
 {
     var model : TAAuthenticateRequestModelObj!
-    init() {}
-    required init?(map: Map) {}
-    func mapping(map: Map)
+    public init() {}
+    required public init?(map: Map) {}
+    public func mapping(map: Map)
     {
         model   <- map["model"]
     }
     
 }
 
-class TAAuthenticateRequestModelObj : Mappable
+public class TAAuthenticateRequestModelObj : Mappable
 {
-    var authSessionId : String = ""
-    var email : String = ""
-    var userName : String = ""
-    var password : String = ""
-    var phoneNumber : String = ""
-    var pin : String = ""
-    var authFactorType : Int = -1
-    var currentAuthStep : Int = -1
+    public var authSessionId : String = ""
+    public var email : String = ""
+    public var userName : String = ""
+    public var password : String = ""
+    public var phoneNumber : String = ""
+    public var pin : String = ""
+    public var authFactorType : Int = -1
+    public var currentAuthStep : Int = -1
     
    
-    init() {}
-    required init?(map: Map) {}
-    func mapping(map: Map)
+    public init() {}
+    required public init?(map: Map) {}
+    public func mapping(map: Map)
     {
         authSessionId            <- map["authSessionId"]
         email                    <- map["email"]

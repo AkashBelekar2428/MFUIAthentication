@@ -19,26 +19,26 @@ import Foundation
 import ObjectMapper
 
 
-class TAAuthenticateStartRequest : Mappable
+public class TAAuthenticateStartRequest : Mappable
 {
     var model : TAAuthenticateStartModelObj!
-    init() {}
-    required init?(map: Map) {}
-    func mapping(map: Map)
+    public init() {}
+    required public init?(map: Map) {}
+    public func mapping(map: Map)
     {
         model   <- map["model"]
     }
     
 }
 
-class TAAuthenticateStartModelObj : Mappable
+public class TAAuthenticateStartModelObj : Mappable
 {
-    var clientId : String = ""
-    var clientScope : String = ""
+    public var clientId : String = ""
+    public var clientScope : String = ""
    
-    init() {}
-    required init?(map: Map) {}
-    func mapping(map: Map)
+    public init() {}
+    required public init?(map: Map) {}
+    public func mapping(map: Map)
     {
         clientId          <- map["clientId"]
         clientScope       <- map["clientScope"]
