@@ -34,7 +34,7 @@ Pod::Spec.new do |s|
   s.dependency 'Alamofire', '~> 5.4'
   s.dependency 'SVProgressHUD'
   s.dependency 'ObjectMapper', '~> 4.2'
-  s.resources = 'Image/*.png'
+  s.resource_bundles = 'Image/*.png'
   
   # s.resource_bundles = {
   #   'MFUIAthentication' => ['MFUIAthentication/Assets/*.png']
