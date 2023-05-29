@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'MFUIAthentication'
-  s.version          = '1.1.5'
+  s.version          = '1.1.6'
   s.summary          = 'easy to use of MFUIAthentication.'
 
 # This description is used to generate tags and improve search results.
@@ -34,6 +34,7 @@ Pod::Spec.new do |s|
   s.dependency 'Alamofire', '~> 5.4'
   s.dependency 'SVProgressHUD'
   s.dependency 'ObjectMapper', '~> 4.2'
+  s.resources = 'Image/*.png'
   
   # s.resource_bundles = {
   #   'MFUIAthentication' => ['MFUIAthentication/Assets/*.png']
