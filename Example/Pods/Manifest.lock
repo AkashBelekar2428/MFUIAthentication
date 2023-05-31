@@ -1,6 +1,6 @@
 PODS:
   - Alamofire (5.7.1)
-  - MFUIAthentication (1.1.6):
+  - MFUIAthentication (1.1.7):
     - Alamofire (~> 5.4)
     - ObjectMapper (~> 4.2)
     - SVProgressHUD
@@ -25,7 +25,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   Alamofire: 0123a34370cb170936ae79a8df46cc62b2edeb88
-  MFUIAthentication: 05141ee8640f48b4d34de22076cabb5badb1e656
+  MFUIAthentication: 5ca424817e908891249a84c9582dfe27f5919992
   ObjectMapper: 1eb41f610210777375fa806bf161dc39fb832b81
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
 

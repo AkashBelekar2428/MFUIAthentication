@@ -8,20 +8,19 @@
 import UIKit
 
 //MARK: Protocol AuthenticationLogInDelegate
-public protocol AuthenticationLogInDelegate
-{
+public protocol AuthenticationLogInDelegate{
     func sendPinBtnAction(email: String, password: String)
 }
 
-public class AuthenticationLogIn: UIView
-{
+//MARK: AuthenticationLogIn Class
+public class AuthenticationLogIn: UIView{
     
     //MARK: @IBOutlets
     @IBOutlet weak public var imgHeaderLogo:UIImageView!
     @IBOutlet weak public var lblHeaderLogin:UILabel!
     @IBOutlet weak public var viewHeader:UIView!
     @IBOutlet weak public var lblAuthType:UILabel!
-    @IBOutlet weak public var tfEmail:UITextField!
+    @IBOutlet weak public var tfUsername:UITextField!
     @IBOutlet weak public var tfPassword:UITextField!
     @IBOutlet weak public var btnValidate:UIButton!
     @IBOutlet weak public var btnEye:UIButton!
@@ -31,58 +30,44 @@ public class AuthenticationLogIn: UIView
     @IBOutlet weak public var lblPassword:UILabel!
     @IBOutlet weak public var viewSpaceHeight:UIView!
     @IBOutlet weak public var viewContainerHeight: NSLayoutConstraint!
-    
     @IBOutlet weak public var viewPasswordTf:UIView!
-    
     
     //MARK: Variables
     let nibName = "AuthenticationLogIn"
     public var delegate:AuthenticationLogInDelegate?
     public var authConfig = AuthenticationConfiguration()
-    var myUtility = Utility()
+    lazy var  alert = AlertManager()
     public weak var controller: UIViewController?
     
-    
     //MARK: System methods
-    required init?(coder aDecoder: NSCoder)
-    {
+    required init?(coder aDecoder: NSCoder){
         super.init(coder: aDecoder)
         commonInit()
     }
     
-    override init(frame: CGRect)
-    {
+    override init(frame: CGRect){
         super.init(frame: frame)
         commonInit()
     }
     
-    
     //MARK: Custom methods
-    func commonInit()
-    {
+    func commonInit(){
         guard let view = loadViewFromNib() else { return }
         view.frame = self.bounds
-        
-        tfEmail.delegate = self
+        tfUsername.delegate = self
         tfPassword.delegate = self
-        
         self.addSubview(view)
-        
         self.viewContainerAuth.isHidden = true
     }
     
-    func loadViewFromNib() -> UIView?
-    {
+    func loadViewFromNib() -> UIView?{
         let bundel = Bundle(for: AuthenticationLogIn.self)
         let nib = bundel.loadNibNamed(nibName, owner: self)?.first as? UIView
-        
         return nib
     }
     
-    
-    //MARK: lables
-    public func setThemsForLable(lbl:UILabel, config:TALable)
-    {
+    //MARK: Lables For Thems
+    public func setThemsForLable(lbl:UILabel, config:TALable){
         lbl.text = config.TAText
         lbl.textColor = config.TATextColor
         lbl.font = config.TATextFont
@@ -90,10 +75,8 @@ public class AuthenticationLogIn: UIView
         lbl.textAlignment = config.TATextAlignment
     }
     
-    
     //MARK: Validate Button
-    public func setThemsForButton(btn:UIButton, config:TAButton)
-    {
+    public func setThemsForButton(btn:UIButton, config:TAButton){
         btn.setTitle(config.TABtnTitleText, for: .normal)
         btn.setTitleColor(config.TABtnTitleTextColor, for: .normal)
         btn.titleLabel?.font = config.TABtnTitleTextFont
@@ -102,20 +85,16 @@ public class AuthenticationLogIn: UIView
         btn.layer.masksToBounds = config.TABtnMasksToBounds
     }
     
-    
     //MARK: ResendPIN Button
-    public func setThemsForResentPINButton(btn:UIButton, config: TAButton)
-    {
+    public func setThemsForResentPINButton(btn:UIButton, config: TAButton){
         btn.setTitle(config.TABtnTitleText, for: .normal)
         btn.setTitleColor(config.TABtnTitleTextColor, for: .normal)
         btn.titleLabel?.font = config.TABtnTitleTextFont
         btn.backgroundColor = config.TABtnBackgrounColor
     }
     
-    
     //MARK: TextField
-    public func setThemsForTextField(textfiled: UITextField, config:TATextFiled)
-    {
+    public func setThemsForTextField(textfiled: UITextField, config:TATextFiled){
         textfiled.placeholder  = config.TATextfiledPlaceHolderText
         textfiled.textColor   = config.TATextfiledPlaceHolderTextColor
         textfiled.font = config.TATextfiledPlaceHolderTextFont
@@ -126,24 +105,19 @@ public class AuthenticationLogIn: UIView
     
     
     //MARK: HeaderView
-    public func setThemsForHeaderView(view:UIView, config: TAUIView)
-    {
+    public func setThemsForHeaderView(view:UIView, config: TAUIView){
         view.backgroundColor = config.TAviewBackgroundColor
-       
-        
     }
+    
     //MARK: tfPasswordView
-    public func setTfViewBorderColors(view:UIView, config:TAUIView)
-    {
+    public func setTfViewBorderColors(view:UIView, config:TAUIView){
         view.layer.borderColor = config.TAViewTfBorderColor.cgColor
         view.layer.cornerRadius = CGFloat(config.TAViewCornerRadius)
         view.layer.borderWidth = CGFloat(config.TAviewCornerWidth)
     }
     
-    
     //MARK: ContainerView
-    public func setThemsContainerView(view:UIView, config: TAUIView)
-    {
+    public func setThemsContainerView(view:UIView, config: TAUIView){
         view.layer.shadowColor = config.TAviewShadowColor.cgColor
         view.layer.shadowOpacity = Float(config.TAviewShadowOpacity)
         view.layer.shadowOffset = config.TAviewShadowOffset
@@ -152,25 +126,19 @@ public class AuthenticationLogIn: UIView
         self.viewContainerHeight.constant = CGFloat(config.TAViewHeight)
     }
     
-    
     //MARK: HeaderView Logo
-    public func setThemsForHeaderViewImageORLogo(img: UIImageView, config: TAImage)
-    {
+    public func setThemsForHeaderViewImageORLogo(img: UIImageView, config: TAImage){
         img.image = config.TAImageLogo
     }
     
-    
     //MARK: SetDefaultThems
-    public func setDefaultThems()
-    {
+    public func setDefaultThems(){
         let config = self.themsConfiguration()
         setThemWithAuthConfiguration(config: config)
     }
     
-    
     //MARK: Configure DefaultThems
-    func themsConfiguration() -> AuthenticationConfiguration
-    {
+    func themsConfiguration() -> AuthenticationConfiguration{
         let authConfigObj = AuthenticationConfiguration()
         let lblHeader = TALable()
         let lblFirst = TALable()
@@ -184,7 +152,6 @@ public class AuthenticationLogIn: UIView
         let containerView = TAUIView()
         let tfBoaderView = TAUIView()
         
-        
         //MARK: HeaderView Txt
         lblHeader.TAText = "Log in"
         lblHeader.TATextColor = .textLblColor
@@ -192,7 +159,7 @@ public class AuthenticationLogIn: UIView
         lblHeader.TATextFont = .boldSystemFont(ofSize: 20)
         
         //MARK: Email/Username Txt
-        lblFirst.TAText = "Email Address"
+        lblFirst.TAText = "Username"
         lblFirst.TATextColor = .textLblColor
         lblFirst.TATextAlignment = .left
         lblFirst.TATextFont = .systemFont(ofSize: 16)
@@ -204,7 +171,7 @@ public class AuthenticationLogIn: UIView
         lblSecond.TATextFont = .systemFont(ofSize: 16)
         
         //MARK: Email Textfiled
-        tfFirst.TATextfiledPlaceHolderText = "Enter Email"
+        tfFirst.TATextfiledPlaceHolderText = "Enter Username"
         tfFirst.TATextfiledPlaceHolderTextColor = .black
         tfFirst.TATextfiledPlaceHolderBorderColor = .textfiledBoarderColor
         tfFirst.TATextfiledPlaceHolderBorderWidth = 0.5
@@ -226,7 +193,6 @@ public class AuthenticationLogIn: UIView
         tfBoaderView.TAViewCornerRadius = 5
         tfBoaderView.TAviewCornerWidth = 1
         
-        
         //MARK: ContainerView
         containerView.TAViewCornerRadius = 5
         containerView.TAviewShadowColor = .gray
@@ -234,7 +200,6 @@ public class AuthenticationLogIn: UIView
         containerView.TAviewShadowOffset = CGSize(width: 2.0, height: 2.0)
         containerView.TAviewShadowRadius = 6
         containerView.TAViewHeight = 330
-        
         
         //MARK: valide Btn
         btnValide.TABtnTitleText = "Validate"
@@ -253,6 +218,7 @@ public class AuthenticationLogIn: UIView
         //MARK: header Logo
         headerImgLogo.TAImageLogo = UIImage(named: "\("logo2")") ?? UIImage()
         
+        //MARK: Assign Values
         authConfigObj.headerLbl = lblHeader
         authConfigObj.firstLbl = lblFirst
         authConfigObj.secondLbl = lblSecond
@@ -268,10 +234,9 @@ public class AuthenticationLogIn: UIView
         return authConfigObj
     }
     
-    
     //MARK: Set Configurations
-    public func setThemWithAuthConfiguration(config:AuthenticationConfiguration)
-    {
+    public func setThemWithAuthConfiguration(config:AuthenticationConfiguration){
+        
         self.setThemsForHeaderView(view: viewHeader, config: config.headerView)
         
         self.setThemsForLable(lbl: lblHeaderLogin, config: config.headerLbl)
@@ -280,7 +245,7 @@ public class AuthenticationLogIn: UIView
         
         self.setThemsForLable(lbl: lblPassword, config: config.secondLbl)
         
-        self.setThemsForTextField(textfiled: tfEmail, config: config.firstTextfiled)
+        self.setThemsForTextField(textfiled: tfUsername, config: config.firstTextfiled)
         
         self.setThemsForTextField(textfiled: tfPassword, config: config.secondTextfiled)
         
@@ -296,52 +261,44 @@ public class AuthenticationLogIn: UIView
         
         self.setTfViewBorderColors(view: viewPasswordTf, config: config.tfView)
         
-       
-        
         self.viewContainerAuth.isHidden = false
     }
     
     //MARK: IBAction
-    @IBAction func validateBtnAction(_ sender:UIButton)
-    {
-        if myUtility.isValideEmail(email: (tfEmail.text?.trimmingCharacters(in: .whitespaces))!)
-        {
-            if myUtility.isPasswordValide(password: (tfPassword.text?.trimmingCharacters(in: .whitespaces))!)
-            {
-                delegate?.sendPinBtnAction(email: (tfEmail.text?.trimmingCharacters(in: .whitespaces))!, password: (tfPassword.text?.trimmingCharacters(in: .whitespaces))!)
+    @IBAction func validateBtnAction(_ sender:UIButton){
+        
+        let username = ValidationClass.shared.isUsernameValid(username: tfUsername.text?.trimmingCharacters(in: .whitespacesAndNewlines) ?? "")
+        let password = ValidationClass.shared.isPasswordValid(password: tfPassword.text?.trimmingCharacters(in: .whitespacesAndNewlines) ?? "")
+        
+        if username.1 == true {
+            if password.1 == true{
+                delegate?.sendPinBtnAction(email: tfUsername.text!, password: tfPassword.text!)
+            }else{
+                let topController = TopControllerManager.getTopViewController()
+                AlertManager.shared.showAlert(title: App_Alert_Title, msg: password.0, action: ok, viewController: topController!)
             }
-            else
-            {
-                myUtility.showAlter(title: "PASSWORD", msg: "Invalide Password", action: "OK", viewController: self.controller!)
-            }
-        }
-        else
-        {
-            myUtility.showAlter(title: "EMAIL", msg: "Invalide Email", action: "OK", viewController: self.controller!)
+        }else{
+            let topController = TopControllerManager.getTopViewController()
+            AlertManager.shared.showAlert(title: App_Alert_Title, msg:username.0 , action: ok, viewController: topController!)
         }
     }
     
-    @IBAction func eyeBtnAction()
-    {
+    @IBAction func eyeBtnAction(){
         tfPassword.isSecureTextEntry = !tfPassword.isSecureTextEntry
         //        let btneyeImg = tfPassword.isSecureTextEntry ? UIImage(systemName: "eye.slash") : UIImage(systemName: "eye")
         //        btnEye.setImage(btneyeImg, for: .normal)
     }
-    @IBAction func reminderBtnAction()
-    {
+    @IBAction func reminderBtnAction(){
         
     }
-    @IBAction func resendBtnAction()
-    {
+    @IBAction func resendBtnAction(){
         
     }
 }
 
-//MARK: UITextFieldDelegate
-extension AuthenticationLogIn:UITextFieldDelegate
-{
-    public func textFieldShouldReturn(_ textField: UITextField) -> Bool
-    {
+//MARK: UITextFieldDelegate Extension
+extension AuthenticationLogIn:UITextFieldDelegate{
+    public func textFieldShouldReturn(_ textField: UITextField) -> Bool{
         textField.resignFirstResponder()
         return true
     }

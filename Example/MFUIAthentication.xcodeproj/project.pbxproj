@@ -15,6 +15,8 @@
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		6A5DF78CB5E120CA27369015 /* Pods_MFUIAthentication_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A0842370DA5F0FA1073D38A /* Pods_MFUIAthentication_Tests.framework */; };
+		AEBB47472A24C93D00405C89 /* AuthenticationSuccess.xib in Resources */ = {isa = PBXBuildFile; fileRef = AEBB47452A24C93D00405C89 /* AuthenticationSuccess.xib */; };
+		AEBB47482A24C93D00405C89 /* AuthenticationSuccess.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEBB47462A24C93D00405C89 /* AuthenticationSuccess.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +48,8 @@
 		82438EAB8594CCC924FEE1F7 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		8D374F8B07B8F8233A362403 /* MFUIAthentication.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = MFUIAthentication.podspec; path = ../MFUIAthentication.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		99AEC5345AC947B409A0C78F /* Pods-MFUIAthentication_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MFUIAthentication_Tests.debug.xcconfig"; path = "Target Support Files/Pods-MFUIAthentication_Tests/Pods-MFUIAthentication_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		AEBB47452A24C93D00405C89 /* AuthenticationSuccess.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AuthenticationSuccess.xib; sourceTree = "<group>"; };
+		AEBB47462A24C93D00405C89 /* AuthenticationSuccess.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticationSuccess.swift; sourceTree = "<group>"; };
 		EB4B7D579D19D8677F671F38 /* Pods-MFUIAthentication_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MFUIAthentication_Example.release.xcconfig"; path = "Target Support Files/Pods-MFUIAthentication_Example/Pods-MFUIAthentication_Example.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -98,6 +102,8 @@
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
+				AEBB47462A24C93D00405C89 /* AuthenticationSuccess.swift */,
+				AEBB47452A24C93D00405C89 /* AuthenticationSuccess.xib */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
 			);
 			name = "Example for MFUIAthentication";
@@ -248,6 +254,7 @@
 				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
+				AEBB47472A24C93D00405C89 /* AuthenticationSuccess.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -337,6 +344,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
+				AEBB47482A24C93D00405C89 /* AuthenticationSuccess.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
