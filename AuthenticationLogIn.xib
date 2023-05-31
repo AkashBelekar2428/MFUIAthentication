@@ -2,13 +2,14 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AuthenticationLogIn" customModule="TAAuthenticationUI" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AuthenticationLogIn" customModule="MFUIAthentication" customModuleProvider="target">
             <connections>
                 <outlet property="btnEye" destination="6Rp-yb-cAw" id="FOj-6p-FKK"/>
                 <outlet property="btnForgotPassword" destination="Ev4-U4-IwS" id="vOP-NX-SuH"/>
@@ -18,8 +19,8 @@
                 <outlet property="lblAuthType" destination="Ir3-BX-Hd1" id="MpA-7u-WwG"/>
                 <outlet property="lblHeaderLogin" destination="Bld-E6-p8Q" id="Kq5-KB-uwp"/>
                 <outlet property="lblPassword" destination="SNG-2r-7kG" id="GPY-VW-BSK"/>
-                <outlet property="tfEmail" destination="mjY-8y-CNu" id="4VI-uq-Tb5"/>
                 <outlet property="tfPassword" destination="8EX-ag-1Xv" id="nYI-4O-9g9"/>
+                <outlet property="tfUsername" destination="mjY-8y-CNu" id="qxd-MD-2Qy"/>
                 <outlet property="viewContainerAuth" destination="jXB-oW-lqb" id="cD5-zo-dCb"/>
                 <outlet property="viewContainerHeight" destination="IdY-pJ-E0z" id="GK7-zz-IKz"/>
                 <outlet property="viewHeader" destination="bKp-nW-XB4" id="Gg6-qh-wWr"/>
@@ -38,7 +39,7 @@
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bKp-nW-XB4">
                             <rect key="frame" x="0.0" y="0.0" width="515" height="60"/>
                             <subviews>
-                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo2" translatesAutoresizingMaskIntoConstraints="NO" id="Cjx-1S-nta">
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Cjx-1S-nta">
                                     <rect key="frame" x="12" y="5" width="80" height="50"/>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -85,7 +86,7 @@
                                                 <constraint firstAttribute="height" constant="40" id="LZ1-4q-7M4"/>
                                             </constraints>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                            <textInputTraits key="textInputTraits"/>
+                                            <textInputTraits key="textInputTraits" autocorrectionType="no"/>
                                         </textField>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iTD-O0-fRV">
                                             <rect key="frame" x="515" y="10" width="0.0" height="30"/>
@@ -248,7 +249,6 @@
     </objects>
     <resources>
         <image name="eye" catalog="system" width="128" height="79"/>
-        <image name="logo2" width="256" height="256"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

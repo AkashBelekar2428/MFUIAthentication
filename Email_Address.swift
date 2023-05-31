@@ -12,7 +12,7 @@ public protocol EmailAddressDelegate{
     func sendPINBtnAction(email:String)
 }
 
-
+//MARK: Email_Address Class
 public class Email_Address: UIView{
     
     //MARK: Outlets
@@ -27,30 +27,25 @@ public class Email_Address: UIView{
     @IBOutlet weak public var viewSpaceHeight:UIView!
     @IBOutlet weak public var viewContainerHeight: NSLayoutConstraint!
 
-    
-    
     //MARK: Variables
     let nibName = "Email_Address"
     public var pinViewIns = PINView()
     public var delegate:EmailAddressDelegate?
     public var emailConfig = AuthenticationConfiguration()
-    lazy var  myUtility = Utility()
+    lazy var  alert = AlertManager()
     public weak var controller: UIViewController?
     
     
     //MARK: System methods
-    required init?(coder aDecoder: NSCoder)
-    {
+    required init?(coder aDecoder: NSCoder){
         super.init(coder: aDecoder)
         commonInit()
     }
     
-    override init(frame: CGRect)
-    {
+    override init(frame: CGRect){
         super.init(frame: frame)
         commonInit()
     }
-    
     
     //MARK: Custom methods
     func commonInit() {
@@ -60,8 +55,7 @@ public class Email_Address: UIView{
         self.addSubview(view)
     }
     
-    func loadViewFromNib() -> UIView?
-    {
+    func loadViewFromNib() -> UIView?{
         let bundel = Bundle(for: Email_Address.self)
         let nib = bundel.loadNibNamed(nibName, owner: self)?.first as? UIView
         return nib
@@ -69,8 +63,7 @@ public class Email_Address: UIView{
     
     
     //MARK: lables
-    public func setThemsForHeaderLable(lbl:UILabel, config:TALable)
-    {
+    public func setThemsForHeaderLable(lbl:UILabel, config:TALable){
         lbl.text = config.TAText
         lbl.textColor = config.TATextColor
         lbl.font = config.TATextFont
@@ -79,8 +72,7 @@ public class Email_Address: UIView{
     }
     
     //MARK: Validate Button
-    public func setThemsForButton(btn:UIButton, config:TAButton)
-    {
+    public func setThemsForButton(btn:UIButton, config:TAButton){
         btn.setTitle(config.TABtnTitleText, for: .normal)
         btn.setTitleColor(config.TABtnTitleTextColor, for: .normal)
         btn.titleLabel?.font = config.TABtnTitleTextFont
@@ -90,8 +82,7 @@ public class Email_Address: UIView{
     }
     
     //MARK: TextField
-    public func setThemsForTextField(textfiled: UITextField, config:TATextFiled)
-    {
+    public func setThemsForTextField(textfiled: UITextField, config:TATextFiled){
         textfiled.placeholder = config.TATextfiledPlaceHolderText
         textfiled.textColor = config.TATextfiledPlaceHolderTextColor
         textfiled.font = config.TATextfiledPlaceHolderTextFont
@@ -100,41 +91,34 @@ public class Email_Address: UIView{
         textfiled.layer.cornerRadius = CGFloat(config.TATextfiledPlaceHolderCornerRadius)
     }
     
-    
     //MARK: HeaderView
-    public func setThemsForHeaderView(view:UIView, config: TAUIView)
-    {
+    public func setThemsForHeaderView(view:UIView, config: TAUIView){
         view.backgroundColor = config.TAviewBackgroundColor
     }
  
     //MARK: ContainerView
-    public func setThemsContainerView(view:UIView, config: TAUIView)
-    {
+    public func setThemsContainerView(view:UIView, config: TAUIView){
         view.layer.shadowColor = config.TAviewShadowColor.cgColor
         view.layer.shadowOpacity = Float(config.TAviewShadowOpacity)
         view.layer.shadowOffset = config.TAviewShadowOffset
         view.layer.shadowRadius = CGFloat(config.TAViewCornerRadius)
         view.layer.cornerRadius = CGFloat(config.TAViewCornerRadius)
         self.viewContainerHeight.constant = CGFloat(config.TAViewHeight)
-        
     }
     
     //MARK: HeaderView Logo
-    public func setThemsForHeaderViewImageORLogo(img: UIImageView, config: TAImage)
-    {
+    public func setThemsForHeaderViewImageORLogo(img: UIImageView, config: TAImage){
         img.image = config.TAImageLogo
     }
     
     //MARK: SetDefaultThems
-    public func setEmailDefaultThemes()
-    {
+    public func setEmailDefaultThemes(){
         let configObj = themsConfiguration()
         self.setThemeWithEmailConfiguration(config: configObj)
     }
     
     //MARK: Configure DefaultThems
-    func themsConfiguration() -> AuthenticationConfiguration
-    {
+    func themsConfiguration() -> AuthenticationConfiguration{
         let config = AuthenticationConfiguration()
         let lblHeader = TALable()
         let lblFirst = TALable()
@@ -196,7 +180,6 @@ public class Email_Address: UIView{
         config.logoImage = imgLogo
         config.containerViewShow = containerView
        
-        
         return config
     }
     
@@ -220,25 +203,25 @@ public class Email_Address: UIView{
         self.setThemsContainerView(view: viewContainerEmail, config: config.containerViewShow)
         
         self.setThemsContainerView(view: viewContainerEmail, config: config.containerViewShow)
-        
-        
     }
     
     //MARK: IBAction
     @IBAction func sendPINClicked(_ sender:UIButton){
-        //     emailNavDelegate?.navEmail()
-        if myUtility.isValideEmail(email: (tfEmail.text?.trimmingCharacters(in: .whitespaces))!)
-        {
-            delegate?.sendPINBtnAction(email: (tfEmail.text?.trimmingCharacters(in: .whitespaces))!)
-        }
-        else
-        {
-            myUtility.showAlter(title: "EMAIL", msg: "Invalide Email", action: "OK", viewController: self.controller!)
+ 
+        let emailValid = self.tfEmail.text?.trimmingCharacters(in: .whitespacesAndNewlines) ?? ""
+        let email = ValidationClass.shared.isEmailValid(email: emailValid)
+        
+        if email.1 == true {
+            delegate?.sendPINBtnAction(email: tfEmail.text!)
+            
+        }else{
+            var topController = TopControllerManager.getTopViewController()
+            alert.showAlert(title: App_Alert_Title, msg:email.0, action: ok, viewController: topController!)
         }
     }
 }
 
-//MARK: UITextFieldDelegate
+//MARK: UITextFieldDelegate Extension
 extension Email_Address:UITextFieldDelegate{
     public func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()
