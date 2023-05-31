@@ -30,7 +30,7 @@ Pod::Spec.new do |s|
   
   s.ios.deployment_target = '12.0'
   s.swift_version = '5.0'
-  s.source = { :git => 'https://github.com/akashbelekar2428/MFUIAthentication.git', :tag => s.version.to_s }
+  s.source_files = 'Source/**/*.{swift,xib,xcassets}'
   s.dependency 'Alamofire', '~> 5.4'
   s.dependency 'SVProgressHUD'
   s.dependency 'ObjectMapper', '~> 4.2'
@@ -39,5 +39,4 @@ Pod::Spec.new do |s|
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
-  #Source
 end
